@@ -1,0 +1,146 @@
+@import url('http://fonts.googleapis.com/css?family=Lobster+Two');
+
+
+#fluid_1{
+	text-align: center;
+}
+
+#fluid_1 h1{
+	font: 400 500%/1.3 'Lobster Two', Helvetica, sans-serif;
+  	color: #2b2b2b;
+  	text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+  	opacity: 1;
+}
+
+body{
+	background: #12c2e9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #d4d5d6, #fcfcfc, #d4d5d6);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #d4d5d6, #fcfcfc, #d4d5d6); 
+}
+ /*button animation*/
+#stylish-btn{
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 15px 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000;
+	letter-spacing: 2px;
+	font-size: 200%;
+}
+#stylish-btn:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #02fc1e;
+	z-index: -1;
+	border-style: solid;
+	transition: transform 0.5s;
+	transform-origin: bottom right;
+	transform: scale(0);
+}
+#stylish-btn:hover:before{
+	transition: transform 0.5s;
+	transform-origin:top left;
+	transform: scale(1);
+}
+#stylish-btn:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	border:2px solid #000;
+	z-index: -1;
+	box-sizing: border-box;
+	transition: transform 0.5s;
+	transform-origin: top left;
+	transform: scale(1);
+}
+#stylish-btn:hover:after{
+	transition: transform 0.5s;
+	transform-origin: bottom right;
+	transform: scale(0);
+}
+/*button animation finished above*/
+
+
+footer{
+	padding-top: 3%;
+}
+
+@media only screen and (min-width: 1024px){
+
+	#fluid_1{
+		text-align: center;
+		padding-bottom: 1%;
+	}
+
+
+	#fluid_1 h1{
+		font: 400 300%/1.3 'Lobster Two', Helvetica, sans-serif;
+	  	color: #2b2b2b;
+	  	text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+	  	opacity: 1;
+	}
+
+		/*button animation*/
+	#stylish-btn{
+		position: absolute;
+		top: 53%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		padding: 15px 30px;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #000;
+		letter-spacing: 2px;
+		font-size: 20px;
+	}
+	#stylish-btn:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #02fc1e;
+		z-index: -1;
+		border-style: solid;
+		transition: transform 0.5s;
+		transform-origin: bottom right;
+		transform: scale(0);
+	}
+	#stylish-btn:hover:before{
+		transition: transform 0.5s;
+		transform-origin:top left;
+		transform: scale(1);
+	}
+	#stylish-btn:after{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: transparent;
+		border:2px solid #000;
+		z-index: -1;
+		box-sizing: border-box;
+		transition: transform 0.5s;
+		transform-origin: top left;
+		transform: scale(1);
+	}
+	#stylish-btn:hover:after{
+		transition: transform 0.5s;
+		transform-origin: bottom right;
+		transform: scale(0);
+	}
+}
